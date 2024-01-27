@@ -1,5 +1,5 @@
 
-from sqlmodel import Field, SQLModel, create_engine
+from sqlmodel import Field, SQLModel
 
 
 class Player(SQLModel, table=True):

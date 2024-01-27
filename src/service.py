@@ -14,7 +14,7 @@ class UpdateDBService:
         self._club_id = self._api.get_club_id_by_name(reference_club)
         self._traitors = traitors
 
-        sqlite_file_name = "database.db"
+        sqlite_file_name = "./database.db"
         sqlite_url = f"sqlite:///{sqlite_file_name}"
         self.engine = create_engine(sqlite_url, echo=True)
         SQLModel.metadata.drop_all(self.engine)
@@ -57,7 +57,7 @@ class UpdateDBService:
 class FootballService:
 
     def __init__(self):
-        sqlite_file_name = "database.db"
+        sqlite_file_name = "./database.db"
         sqlite_url = f"sqlite:///{sqlite_file_name}"
         self.engine = create_engine(sqlite_url, echo=True)
         self.bio_df = self._get_bio_from_db()
