@@ -1,6 +1,6 @@
 import streamlit as st
 
-from service import FootballService
+from src.service import FootballService
 
 st.title('JAK MIERNOTY WYPADAJĄ NA TLE WIELKIEJ CHELSEA')
 

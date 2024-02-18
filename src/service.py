@@ -1,10 +1,10 @@
 from sqlalchemy import create_engine
 from sqlmodel import SQLModel, Session, select
 
-from api import TransfermarktAPI
+from src.api import TransfermarktAPI
 import pandas as pd
 
-from model import Player, CompetitionStats
+from src.model import Player, CompetitionStats
 
 
 class UpdateDBService:

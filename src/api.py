@@ -2,7 +2,7 @@ import json
 
 import requests
 
-from model import Player, CompetitionStats
+from src.model import Player, CompetitionStats
 
 
 class TransfermarktAPI:
